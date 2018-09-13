@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/image"
+
+        />
+    <TextView
+        android:id="@+id/html"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build Website From With Scratch "
+        android:layout_marginLeft="80dp"
+
+        />
+    <TextView
+        android:id="@+id/css"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HTML AND CSS"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/html"
+        />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:layout_below="@id/css"
+        android:layout_toRightOf="@id/image"
+        android:rating="3.5"
+        android:layout_marginLeft="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(2189)"
+        android:id="@+id/commnet"
+        android:layout_toRightOf="@id/rating"
+        android:layout_below="@id/css"
+        android:layout_marginLeft="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$15"
+        android:id="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/css"
+        android:layout_marginRight="50dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$19"
+        android:id="@+id/actual"
+        android:layout_toRightOf="@id/price"
+        android:layout_below="@id/css"
+
+
+        />
+
+</RelativeLayout>
